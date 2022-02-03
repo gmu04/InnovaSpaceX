@@ -51,10 +51,10 @@
 		F7BFD40A27AC4FD400968E16 /* InnovaSpaceX */ = {
 			isa = PBXGroup;
 			children = (
-				F7BFD40B27AC4FD400968E16 /* InnovaSpaceXApp.swift */,
-				F7BFD40D27AC4FD400968E16 /* ContentView.swift */,
-				F7BFD40F27AC4FD700968E16 /* Assets.xcassets */,
-				F7BFD41127AC4FD700968E16 /* Preview Content */,
+				F7BFD41C27AC50F000968E16 /* AppDrawer */,
+				F7BFD41B27AC50E400968E16 /* Services */,
+				F7BFD41A27AC50DB00968E16 /* ViewModels */,
+				F7BFD41927AC50CE00968E16 /* Views */,
 			);
 			path = InnovaSpaceX;
 			sourceTree = "<group>";
@@ -65,6 +65,38 @@
 				F7BFD41227AC4FD700968E16 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		F7BFD41927AC50CE00968E16 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				F7BFD40D27AC4FD400968E16 /* ContentView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		F7BFD41A27AC50DB00968E16 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		F7BFD41B27AC50E400968E16 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		F7BFD41C27AC50F000968E16 /* AppDrawer */ = {
+			isa = PBXGroup;
+			children = (
+				F7BFD40F27AC4FD700968E16 /* Assets.xcassets */,
+				F7BFD40B27AC4FD400968E16 /* InnovaSpaceXApp.swift */,
+				F7BFD41127AC4FD700968E16 /* Preview Content */,
+			);
+			name = AppDrawer;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
