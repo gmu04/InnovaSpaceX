@@ -16,15 +16,11 @@ struct YearFilterView: View {
 	
 	var body: some View {
 		VStack {
-			let years:[Year] =
-			Array(Set(launchListVM.launches.map { launchVM in
-				launchVM.year
-			})).map({ year in
-				Year(year:year)
-			})
-				.sorted { y1, y2 in
-					y1.year < y2.year
-				}
+
+			let years:[String] =
+				Array(Set(launchListVM.launches.map { launchVM in
+					launchVM.year
+				})).sorted()
 			
 			
 			List{
@@ -32,10 +28,10 @@ struct YearFilterView: View {
 					self.selectedYear = ""
 					self.showModal.toggle()
 				}
-				ForEach(years, id:\.id) { year in
+				ForEach(years, id:\.self) { year in
 					
-					YearCellView(yearTitle: year.year){
-						self.selectedYear = year.year
+					YearCellView(yearTitle: year){
+						self.selectedYear = year
 						self.showModal.toggle()
 					}
 				}
@@ -44,13 +40,6 @@ struct YearFilterView: View {
 		.listStyle(.plain)
 	}
 }
-
-
-struct Year: Identifiable {
-	let id = UUID()
-	var year:String
-}
-
 
 struct YearFilterView_Previews: PreviewProvider {
 	static var previews: some View {
