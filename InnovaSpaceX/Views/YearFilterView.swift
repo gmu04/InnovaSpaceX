@@ -22,13 +22,13 @@ struct YearFilterView: View {
 			
 			
 			List{
-				YearCellView(yearTitle: "All"){
+				YearFilterCellView(yearTitle: "All"){
 					self.selectedYear = ""
 					self.showModal.toggle()
 				}
 				ForEach(years, id:\.self) { year in
 					
-					YearCellView(yearTitle: year){
+					YearFilterCellView(yearTitle: year){
 						self.selectedYear = year
 						self.showModal.toggle()
 					}
@@ -46,22 +46,4 @@ struct YearFilterView_Previews: PreviewProvider {
 }
 
 
-struct YearCellView: View {
-	let yearTitle:String
-	let doSelection: ()->Void
-	
-	var body: some View {
-		HStack{
-			Spacer()
-			Button {
-				doSelection()
-			} label: {
-				Text(yearTitle)
-					.font(.title)
-					.bold()
-			}
-			
-			Spacer()
-		}
-	}
-}
+

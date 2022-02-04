@@ -26,6 +26,7 @@
 		F7BFD43927AC8F6C00968E16 /* LaunchCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7BFD43827AC8F6C00968E16 /* LaunchCellView.swift */; };
 		F7BFD43B27AC938D00968E16 /* LaunchDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7BFD43A27AC938D00968E16 /* LaunchDetailView.swift */; };
 		F7BFD43D27AC96D500968E16 /* YearFilterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7BFD43C27AC96D500968E16 /* YearFilterView.swift */; };
+		F7BFD45F27AD31B300968E16 /* YearFilterCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7BFD45E27AD31B300968E16 /* YearFilterCellView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -49,6 +50,7 @@
 		F7BFD43827AC8F6C00968E16 /* LaunchCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchCellView.swift; sourceTree = "<group>"; };
 		F7BFD43A27AC938D00968E16 /* LaunchDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchDetailView.swift; sourceTree = "<group>"; };
 		F7BFD43C27AC96D500968E16 /* YearFilterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YearFilterView.swift; sourceTree = "<group>"; };
+		F7BFD45E27AD31B300968E16 /* YearFilterCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YearFilterCellView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +109,7 @@
 				F7BFD43827AC8F6C00968E16 /* LaunchCellView.swift */,
 				F7BFD43A27AC938D00968E16 /* LaunchDetailView.swift */,
 				F7BFD43C27AC96D500968E16 /* YearFilterView.swift */,
+				F7BFD45E27AD31B300968E16 /* YearFilterCellView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -253,6 +256,7 @@
 				F7BFD42F27AC7D2D00968E16 /* CacheManager.swift in Sources */,
 				F7BFD40C27AC4FD400968E16 /* InnovaSpaceXApp.swift in Sources */,
 				F7BFD42127AC523F00968E16 /* SpaceXApiError.swift in Sources */,
+				F7BFD45F27AD31B300968E16 /* YearFilterCellView.swift in Sources */,
 				F7BFD43D27AC96D500968E16 /* YearFilterView.swift in Sources */,
 				F7BFD42A27AC72BD00968E16 /* Constant.swift in Sources */,
 			);
