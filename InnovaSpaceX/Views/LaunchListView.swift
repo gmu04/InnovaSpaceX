@@ -39,7 +39,10 @@ struct LaunchListView: View {
 			.sheet(isPresented: $showModal) {
 				
 			} content: {
-				YearFilterView(showModal: $showModal, selectedYear:$selectedYear)
+				let years:[String] =
+					Array(Set(launchListVM.launches.map { $0.year })).sorted()
+
+				YearFilterView(showModal: $showModal, selectedYear:$selectedYear, years:years)
 			}
 			.navigationBarTitle("SpaceX Launches", displayMode: .inline)
 			.navigationBarItems(

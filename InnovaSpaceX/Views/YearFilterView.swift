@@ -8,18 +8,13 @@
 import SwiftUI
 
 struct YearFilterView: View {
-	@ObservedObject var launchListVM = LaunchListViewModel(session: URLSession.shared)
-	
 	@Binding var showModal:Bool
 	@Binding var selectedYear:String
-	
+	let years:[String]
+
 	
 	var body: some View {
 		VStack {
-
-			let years:[String] =
-				Array(Set(launchListVM.launches.map { $0.year })).sorted()
-			
 			
 			List{
 				YearFilterCellView(yearTitle: "All"){
@@ -41,7 +36,7 @@ struct YearFilterView: View {
 
 struct YearFilterView_Previews: PreviewProvider {
 	static var previews: some View {
-		YearFilterView(showModal: .constant(false), selectedYear: .constant(""))
+		YearFilterView(showModal: .constant(false), selectedYear: .constant(""), years:["All","2333","2334"])
 	}
 }
 
