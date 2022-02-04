@@ -36,7 +36,7 @@ struct YearFilterView: View {
 
 struct YearFilterView_Previews: PreviewProvider {
 	static var previews: some View {
-		YearFilterView(showModal: .constant(false), selectedYear: .constant(""), years:["All","2333","2334"])
+		YearFilterView(showModal: .constant(false), selectedYear: .constant(""), years:["2333","2334"])
 	}
 }
 
