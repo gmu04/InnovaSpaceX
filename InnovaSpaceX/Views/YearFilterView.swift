@@ -18,9 +18,7 @@ struct YearFilterView: View {
 		VStack {
 
 			let years:[String] =
-				Array(Set(launchListVM.launches.map { launchVM in
-					launchVM.year
-				})).sorted()
+				Array(Set(launchListVM.launches.map { $0.year })).sorted()
 			
 			
 			List{
